@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (same on each page) -->
+    <header class="nav-bar">
+        <a href="index.html"><h1>J&M Event Center</h1></a>
+
+        <!-- Navigation bar -->
+        <nav>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact form -->
+    <main>
+        <fieldset>
+            <h1>Contact Form</h1>
+            <form action="#" method="POST">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" placeholder="Begin your message here..."></textarea>
+                <div class="buttons">
+                    <button type="submit" value="submit">Submit</button>
+                    <button type="reset" value="reset">Reset</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+
+    <!-- Footer (same on each page) -->
+    <footer class="footer">
+        <div class="social-media-icons">
+            <p>Connect with us!</p>
+            <a href="#"><img src="photos/icons8-facebook-50.png" alt="faceblook icon"></a>
+            <a href="#"><img src="photos/icons8-pinterest-50.png" alt="pintrest icon"></a>
+            <a href="#"><img src="photos/icons8-linkedin-50.png" alt="linkedin icon"></a>
+        </div>
+        <p>J&M Event Center | 1234 Main Street, San Francisco, California</p>
+        <p>Copyright &#169 2025 All Rights Reserved </p>
+    </footer>
+</html>

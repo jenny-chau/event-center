@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header (same on each page) -->
+    <header class="nav-bar">
+        <a href="index.html"><h1>J&M Event Center</h1></a>
+        
+        <!-- Navigation bar -->
+        <nav>
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox" class="menu-hamburger">&#9776;</label>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="menu">
+        <table>
+            <!-- Menu title and info -->
+            <tr><th colspan="3" id="menu-title">Venue Menu</th></tr>
+            <tr><td colspan="3" id="payment">We accept cash, credit, Venmo, or Apple Pay at the event center.</td></tr>
+
+            <!-- Appetizers menu -->
+            <tr id="appetizers"><th colspan="3">Appetizers</th></tr>
+
+            <tr>
+                <td class="menu-item-name">Mozzarella Sticks</td>
+                <td class="menu-item-description">Crispy breaded mozzarella with marinara sauce</td>
+                <td class="menu-item-price">$7</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Chicken Tenders & Fries</td>
+                <td class="menu-item-description">Served with honey mustard or BBQ sauce</td>
+                <td class="menu-item-price">$10</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Soft Pretzel Bites</td>
+                <td class="menu-item-description">Warm, salted pretzel bites with cheese dip</td>
+                <td class="menu-item-price">$8</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Loaded Nachos</td>
+                <td class="menu-item-description">Tortilla chips topped with melted cheese, jalapeños, sour cream, and salsa</td>
+                <td class="menu-item-price">$9</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Side Salad</td>
+                <td class="menu-item-description">Mixed greens, cherry tomatoes, cucumbers, and balsamic dressing</td>
+                <td class="menu-item-price">$6</td>
+            </tr>
+            <!-- Main menu -->
+            <tr id="mains"><th colspan="3">Sandwiches & Wraps</th></tr>
+
+            <tr>
+                <td class="menu-item-name">Classic Turkey & Swiss</td>
+                <td class="menu-item-description">Turkey, Swiss cheese, lettuce, and mayo on whole wheat bread</td>
+                <td class="menu-item-price">$10</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Ham & Cheddar Melt</td>
+                <td class="menu-item-description">Warm ham and melted cheddar on a toasted brioche bun</td>
+                <td class="menu-item-price">$11</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Chicken Caesar Wrap</td>
+                <td class="menu-item-description">Grilled chicken, romaine lettuce, parmesan, and caesar dressing in a flour tortilla</td>
+                <td class="menu-item-price">$10</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Veggie Hummus Wrap</td>
+                <td class="menu-item-description">Roasted veggies, hummus, and spinach wrapped in a spinach tortilla</td>
+                <td class="menu-item-price">$9</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">BBQ Pulled Pork Sandwich</td>
+                <td class="menu-item-description">Slow-cooked pork with tangy BBQ sauce on a brioche bun</td>
+                <td class="menu-item-price">$12</td>
+            </tr>   
+
+            <!-- Desserts menu -->
+            <tr id="desserts"><th colspan="3">Desserts</th></tr>
+
+            <tr>
+                <td class="menu-item-name">Chocolate Chip Cookie</td>
+                <td class="menu-item-description">Freshly baked and soft</td>
+                <td class="menu-item-price">$3</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Brownie</td>
+                <td class="menu-item-description">Rich chocolate brownie with a fudge center</td>
+                <td class="menu-item-price">$4</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Mini Cheesecake Cup</td>
+                <td class="menu-item-description">Individual-sized creamy cheesecake</td>
+                <td class="menu-item-price">$5</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Banana Bread Slice</td>
+                <td class="menu-item-description">Moist, sweet, and packed with banana flavor</td>
+                <td class="menu-item-price">$4</td>
+            </tr>
+        
+            <!-- Drinks menu -->
+            <tr id="drinks"><th colspan="3">Drinks</th></tr>
+
+            <tr>
+                <td class="menu-item-name">Bottled Water</td>
+                <td class="menu-item-description">Hydration!</td>
+                <td class="menu-item-price">$2</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Fruit Smoothie</td>
+                <td class="menu-item-description">Strawberry-Banana or Mango-Pineapple</td>
+                <td class="menu-item-price">$6</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Hot Coffee or Tea</td>
+                <td class="menu-item-description">For that midday pick-me-up</td>
+                <td class="menu-item-price">$3</td>
+            </tr>
+            <tr>
+                <td class="menu-item-name">Soda</td>
+                <td class="menu-item-description">Coke, Diet Coke, Sprite, Dr. Pepper</td>
+                <td class="menu-item-price">$3</td>
+            </tr>  
+        </table>
+    </main>
+
+
+    <!-- Footer (same on each page) -->
+    <footer class="footer">
+        <div class="social-media-icons">
+            <p>Connect with us!</p>
+            <a href="#"><img src="photos/icons8-facebook-50.png" alt="faceblook icon"></a>
+            <a href="#"><img src="photos/icons8-pinterest-50.png" alt="pintrest icon"></a>
+            <a href="#"><img src="photos/icons8-linkedin-50.png" alt="linkedin icon"></a>
+        </div>
+        <p>J&M Event Center | 1234 Main Street, San Francisco, California</p>
+        <p>Copyright &#169 2025 All Rights Reserved </p>
+    </footer>
+</body>
+</html>
