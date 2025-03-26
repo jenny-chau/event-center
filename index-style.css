@@ -1,0 +1,153 @@
+/* Home page specific css */
+/* Banner styling */
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-image: url(photos/hero-image-2.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .intro h1,
+  .intro p {
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.807);
+  }
+  
+  .intro h1 {
+    font-size: 38px;
+    padding: 20px 70px 10px;
+    text-shadow: 2px 2px 2px rgb(127, 125, 125);
+    font-weight: 100%;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    padding: 10px 70px 20px;
+  }
+  
+  /* Decrease font size for better small screen responsiveness  */
+  @media screen and (max-width: 500px) {
+    .intro h1 {
+      font-size: 30px;
+      padding: 10px;
+    }
+  
+    .intro p {
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+  
+  /* About and featured section styling */
+  .about,
+  .featured {
+    background-color: lightyellow;
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    margin: 30px;
+    text-align: center;
+  }
+  
+  .about h2,
+  .featured h2 {
+    text-decoration: underline;
+  }
+  
+  .about > p {
+    padding: 10px 30px 20px;
+    margin: 0px;
+    font-size: 16px;
+  }
+  
+  /* Styling the About section hightlights */
+  .about-highlights {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 100px;
+  }
+  
+  .spotlight {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted rgb(147, 145, 145);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 220, 117);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spotlight h3 {
+    font-size: 24px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px;
+    color: rgb(151, 67, 255);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+  }
+  
+  .spotlight p {
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  /* Responsive design: format the hightlights as column*/
+  @media screen and (max-width: 768px) {
+      .about-highlights {
+        flex-direction: column;
+      }
+      .spotlight {
+        align-self: center;
+        margin: 6px;
+      }
+  }
+  
+  /* Featured Events section styling */
+  .featured {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured .events {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 50px;
+    margin: 20px 50px 40px;
+  }
+  
+  .featured .events .event-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .featured .events .event-block p {
+    margin: 0px 0px 15px;
+  }
+  
+  .featured .events .event-block a img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 30px;
+    border: 1px solid rgb(75, 59, 46);
+    box-shadow: grey 2px 2px 2px 2px;
+  }
+  
+  .featured .events .event-block a img:hover {
+    transform: scale(1.05);
+  }
+  

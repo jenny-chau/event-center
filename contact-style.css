@@ -1,0 +1,96 @@
+/* Contact page specific css */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
+    margin: 40px;
+    max-width: 100%;
+    align-items: center;
+    align-self: center;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+  }
+  
+  fieldset h1 {
+    font-size: 36px;
+    margin: 15px;
+  }
+  
+  form {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      margin: 15px 30px;
+      justify-items: center;
+  }
+  
+  label {
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    justify-self: end;
+  }
+  
+  input, textarea {
+    justify-self: start;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: inherit;
+  }
+  
+  textarea {
+      width: 400px;
+      height: 200px;
+  }
+  
+  /* Resize form for smaller screens */
+  @media screen and (max-width: 768px) {
+      form {
+        margin: 5px;
+      }
+      fieldset h1 {
+          font-size: 18px;
+      }
+      
+      label {
+          font-size: 14px;
+      }
+      
+      input {
+          font-size: 12px;
+          width: 100px;
+      }
+      
+      textarea {
+          width: 150px;
+          height: 50px;
+          font-size: 12px;
+      }
+  }
+  
+  input:focus,
+  textarea:focus {
+    border: 2px solid violet;
+    box-shadow: violet 2px 2px 2px 2px;
+  }
+  
+  /* style the "Submit" and "Reset" buttons of the form */
+  .buttons {
+    grid-column: span 2;
+    justify-self: end;
+  }
+  
+  button {
+    justify-items: center;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: rgb(247, 191, 85);
+    border-radius: 5px;
+  }
+  
+  button:active {
+    transform: scale(1.05);
+  }

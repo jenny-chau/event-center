@@ -1,0 +1,52 @@
+/* Event page specific css */
+.events-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .events-page h1 {
+    text-align: center;
+    text-decoration: underline;
+    background-color: lightyellow;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .events-page .event {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed var(--text-color);
+    border-radius: 30px;
+    margin: 20px;
+    padding: 15px 50px;
+    max-width: 90vw;
+    background-color: lightyellow;
+    align-items: center;
+  }
+  
+  .events-page .event .title h2 {
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  
+  .events-page .event .details {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .events-page .event .details .flyer-image img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 30px;
+    margin: 10px;
+    object-fit: contain;
+  }
+  
+  @media screen and (max-width: 768px) {
+      .events-page .event .details {
+          display: flex;
+          flex-direction: column;
+      }
+  }

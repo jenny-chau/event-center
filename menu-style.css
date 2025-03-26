@@ -1,0 +1,33 @@
+/* Menu page specific css */
+
+#menu-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 36px;
+    padding: 0px;
+  }
+  
+  #payment {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+  .menu table {
+    margin: 30px 100px;
+    padding: 30px;
+    border: 1px solid var(--text-color);
+    border-radius: 30px;
+    border-spacing: 20px;
+    background-color: lightyellow;
+  }
+  
+  .menu th {
+    font-size: 24px;
+    padding: 20px;
+  }
+  
+  .menu table tr:hover {
+    background-color: yellow;
+  }
+  
